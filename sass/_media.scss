@@ -1,0 +1,103 @@
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+    .womanrun {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .advantages {
+        &__items {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .header {
+        &__official {
+            display: none;
+        }
+    }
+
+    .womanrun {
+        &__wrapper {
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 36px;
+            line-height: 36px;
+        }
+
+        &__subtitle {
+            margin-top: 10px;
+            line-height: 32px;
+            font-size: 22px;
+        }
+    }
+
+    .advantages {
+        &__item {
+            &:nth-child(3) {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .header {
+        flex-direction: column;
+            &__contacts {
+                font-size: 16px;
+                align-items: center;
+            }
+    }
+    .womanrun {
+        &__wrapper {
+            text-align: center;
+        }
+        
+        &__title {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        &__subtitle {
+            margin-top: 8px;
+            line-height: 30px;
+            font-size: 20px;
+        }
+
+        &__items {
+            flex-direction: column;
+        }
+
+        &__item {
+            &:nth-child(2) {
+                margin-top: 40px;
+            }
+
+            &:nth-child(3) {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .advantages {
+        &__title {
+            font-size: 24px;
+        }
+        &__item {
+            &:nth-child(2) {
+                margin-top: 40px;
+            }
+            &:nth-child(3) {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+

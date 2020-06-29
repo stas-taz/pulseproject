@@ -1,0 +1,174 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* womanrun */
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        max-width: 250px;
+
+        img {
+            width: 100%;
+        }
+    }
+    &__official {
+        text-align: left;
+        color: $white-color;
+        font-weight: 500;
+        font-size: 12px;
+
+            span {
+                display: block;
+                font-size: 18px;
+            }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__phone {
+        display: block;
+        color: $white-color;
+        font-size: 18px;
+        font-weight: 500;
+
+            &:hover {
+                color: $white-color;
+                text-decoration: none;
+            }
+    }
+
+    &__button {
+        @include main-btn;
+
+        margin-top: 8px;
+    }
+}
+/* / header */
+.womanrun {
+    min-height: 648px;
+    background: url(../img/bg/screen.png) center (center / cover) no-repeat;
+    padding: 20px 0 90px 0;
+
+        &__wrapper {
+            margin-top: 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        &__title {
+            font-size: 42px;
+            line-height: 42px;
+            font-weight: 700;
+            color: $white-color;
+            text-transform: uppercase;
+        }
+        &__subtitle {
+            margin-top: 17px;
+            line-height: 17px;
+            font-size: 24px;
+            font-weight: 500;
+            color: $white-color;
+            text-transform: uppercase;
+        }
+        &__items {
+            max-width: 430px;
+            margin-top: 67px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 108px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            color: $white-color;
+
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                }
+        }
+        &__btn {
+            @include main-btn;
+
+            font-size: 16px;
+            width: 300px;
+            height: 50px;
+            margin-top: 68px;
+        }
+        &__link {
+            margin-top: 17px;
+            font-size: 16px;
+            color: $white-color;
+
+                a {
+                    color: $white-color;text-decoration: underline;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+        }
+}
+/* womanrun */
+
+/* advantages */
+.advantages {
+    padding: 70px 0 70px 0;
+    min-height: 472px;
+    background: #f6f6f6;
+    &__title {
+        @include title;
+    }
+    &__items {
+        margin: 0 auto;
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 280px;
+    }
+
+    &__subtitle {
+        margin-top: 38px;
+        font-size: 18px;
+        font-weight: 700;
+        color: $black-color;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 27px;
+        color: $black-color;
+
+            a {
+                color: $main-color;
+                text-decoration: underline;
+            }
+    }
+}
+/* /advantages */
+
+@import 'media';
