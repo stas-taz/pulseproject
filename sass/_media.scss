@@ -1,4 +1,16 @@
-@media (max-width: 1199px) {}
+@media (max-width: 1199px) {
+    .carousel {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .catalog {
+        &__tabs {
+            flex-wrap: wrap;
+            width: auto;
+        }
+    }
+}
 
 @media (max-width: 991px) {
     .womanrun {
@@ -11,6 +23,21 @@
             flex-wrap: wrap;
             justify-content: space-around;
         }
+    }
+
+    .consultation {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .carusel {
+        &__wrapper {
+            width: auto;
+        }
+    }
+
+    button {
+        display: none;
     }
 }
 
@@ -44,6 +71,38 @@
             &:nth-child(3) {
                 margin-top: 40px;
             }
+        }
+    }
+
+    .consultation {
+        padding: 80px 0 60px 0;
+        &__title {
+            text-align: center;
+        }
+
+        &__subtitle {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+
+    .feed-form {
+        margin: 0 auto;
+    }
+
+    .reviews {
+        &__item {
+            
+            flex-direction: column;
+        }
+
+        &__text {
+            margin: 0 auto;
+            margin-top: 40px;
+            padding-left: 0;
+            width: 70%;
+            text-align: center;
         }
     }
 }
@@ -98,6 +157,24 @@
                 margin-top: 40px;
             }
         }
+    }
+
+    .footer {
+        position: static;
+        &__info {
+            position: static;
+            width: 100%;
+            height: auto;
+            transform: none;
+        }
+
+        &__social-items {
+            flex-direction: column;
+        }
+    }
+
+    iframe {
+        height: 420px;
     }
 }
 
